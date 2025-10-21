@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MilikanLab Web</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <h1>MilikanLab</h1>
+      <span class="version">v1.0</span>
+    </div>
+    <nav class="top-nav">
+      <button data-route="/simulasi" class="nav-btn">Simulasi</button>
+      <button data-route="/data" class="nav-btn">Data</button>
+      <button data-route="/grafik" class="nav-btn">Grafik</button>
+      <button data-route="/laporan" class="nav-btn">Laporan</button>
+      <button data-route="/panduan" class="nav-btn">Panduan</button>
+    </nav>
+    <div class="actions">
+      <button id="resetApp" class="secondary">Reset Sesi</button>
+      <a class="github" href="#" target="_blank" rel="noreferrer">Repo</a>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <main id="app" class="app-content" aria-live="polite"></main>
+
+  <footer class="app-footer">
+    <small>© 2025 MilikanLab • Streamlit-inspired • PhET-style</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</body>
+</html>
